@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500&display=swap');
+
+:root{
+    --fonte1: Verdana, geneva, Tahoma, sans-serif;
+    --fonte2: 'Cardo', serif;
+    --fonte3: 'Josefin Slab', serif;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -7,6 +17,7 @@
 html, body {
     min-height: 100vh; /*View Height ou View Wide*/
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 header {
     background-color: black;
@@ -16,11 +27,13 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps ;
+    font-family: var(--fonte2);
+    font-size: 10vh;
 }
 header > p {
     padding-bottom: 50px;
 }
-header a. footer a {
+header a, footer a {
     color: white;
     text-decoration: none;
     font-weight: bolder;
@@ -34,6 +47,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 4vh;
 }
 
 section.normal {
@@ -45,7 +60,8 @@ section.imagem {
     color: white;
 }
 section.imagem > p {
-    width: 350px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.301);
 }
 
