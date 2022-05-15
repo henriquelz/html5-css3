@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3em;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        .spotlight {
+            background-color: rgb(64, 56, 85);
+        }
+        .cprofession {
+            background-color: cadetblue;
+        }
+        .csex {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercice</h1>
+    <table>
+        <colgroup>
+            <col class="cname">
+            <col class="csex" span="2">
+        
+            <col class="cprofession">
+        </colgroup>
+        <caption><strong>Register</strong></caption>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Sex</th>
+            <th scope="col">Age</th>
+            <th scope="col">Profession</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Journalist</td>
+        </tr>
+        <tr>
+            <td>Claudio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Programmer</td>
+        </tr>
+        <tr class="spotlight">
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Teacher</td>
+        </tr>
+        <tr>
+            <td>Helio</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Seller</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>39</td>
+            <td>Doctor</td>
+        </tr>
+        <tr>
+            <td>Otavio</td>
+            <td>M</td>
+            <td>23</td>
+            <td>Bus Ticket Reviser</td>
+        </tr>
+    </table>
+</body>
+</html>
